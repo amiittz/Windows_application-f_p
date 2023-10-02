@@ -29,5 +29,10 @@ namespace WindowsFormsFinalProject
             Wall w1 = new Wall(50, 50, 50, 300);
             w1.Draw(g);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
