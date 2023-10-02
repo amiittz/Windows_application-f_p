@@ -56,11 +56,25 @@ namespace WindowsFormsFinalProject
                 ball.Top += speed;
             }
 
-            if(ball.Bounds.IntersectsWith(end.Bounds))
+            if(ball.Bounds.IntersectsWith(end.Bounds))//בדיקת נצחון
             {
                 timer1.Stop();
                 MessageBox.Show("win in: " + count + " moves!");
             }
+
+            foreach(Control x in this.Controls)
+            {
+                if((string)x.Tag=="wall")
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        MessageBox.Show("wall");
+                        ball.Left -= speed;
+
+                    }
+                }
+            }
+
         }
         private void key_is_done(object sender, KeyEventArgs e)
         {
