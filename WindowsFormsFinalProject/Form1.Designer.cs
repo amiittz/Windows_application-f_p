@@ -49,7 +49,6 @@ namespace WindowsFormsFinalProject
             this.end = new System.Windows.Forms.PictureBox();
             this.ball = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.wall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -78,7 +77,7 @@ namespace WindowsFormsFinalProject
             this.wall.Size = new System.Drawing.Size(171, 14);
             this.wall.TabIndex = 0;
             this.wall.TabStop = false;
-            this.wall.Tag = "wall";
+            this.wall.Tag = "wall_h";
             this.wall.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
@@ -89,7 +88,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox2.Size = new System.Drawing.Size(83, 10);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "wall";
+            this.pictureBox2.Tag = "wall_h";
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox3
@@ -102,7 +101,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "wall";
+            this.pictureBox3.Tag = "wall_v";
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox4
@@ -115,7 +114,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "wall";
+            this.pictureBox4.Tag = "wall_v";
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox5
@@ -127,7 +126,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox5.Size = new System.Drawing.Size(829, 13);
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "wall";
+            this.pictureBox5.Tag = "wall_h";
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox6
@@ -139,7 +138,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox6.Size = new System.Drawing.Size(553, 10);
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "wall";
+            this.pictureBox6.Tag = "wall_h";
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox7
@@ -152,7 +151,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.Tag = "wall";
+            this.pictureBox7.Tag = "wall_v";
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox8
@@ -164,7 +163,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox8.Size = new System.Drawing.Size(278, 10);
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
-            this.pictureBox8.Tag = "wall";
+            this.pictureBox8.Tag = "wall_h";
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox9
@@ -177,7 +176,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Tag = "wall";
+            this.pictureBox9.Tag = "wall_v";
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox10
@@ -189,7 +188,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox10.Size = new System.Drawing.Size(301, 10);
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.Tag = "wall";
+            this.pictureBox10.Tag = "wall_h";
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox11
@@ -202,7 +201,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox11.TabIndex = 0;
             this.pictureBox11.TabStop = false;
-            this.pictureBox11.Tag = "wall";
+            this.pictureBox11.Tag = "wall_v";
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox12
@@ -214,7 +213,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox12.Size = new System.Drawing.Size(149, 10);
             this.pictureBox12.TabIndex = 0;
             this.pictureBox12.TabStop = false;
-            this.pictureBox12.Tag = "wall";
+            this.pictureBox12.Tag = "wall_h";
             this.pictureBox12.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox13
@@ -227,7 +226,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox13.TabIndex = 0;
             this.pictureBox13.TabStop = false;
-            this.pictureBox13.Tag = "wall";
+            this.pictureBox13.Tag = "wall_v";
             this.pictureBox13.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox14
@@ -239,7 +238,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox14.Size = new System.Drawing.Size(149, 10);
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
-            this.pictureBox14.Tag = "wall";
+            this.pictureBox14.Tag = "wall_h";
             this.pictureBox14.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox15
@@ -251,7 +250,7 @@ namespace WindowsFormsFinalProject
             this.pictureBox15.Size = new System.Drawing.Size(149, 10);
             this.pictureBox15.TabIndex = 0;
             this.pictureBox15.TabStop = false;
-            this.pictureBox15.Tag = "wall";
+            this.pictureBox15.Tag = "wall_h";
             this.pictureBox15.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // end
@@ -290,14 +289,6 @@ namespace WindowsFormsFinalProject
             this.label1.Text = "count: 12";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 590);
-            this.splitter1.TabIndex = 3;
-            this.splitter1.TabStop = false;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -307,7 +298,6 @@ namespace WindowsFormsFinalProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 590);
-            this.Controls.Add(this.splitter1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ball);
             this.Controls.Add(this.end);
@@ -375,7 +365,6 @@ namespace WindowsFormsFinalProject
         private System.Windows.Forms.PictureBox end;
         private System.Windows.Forms.PictureBox ball;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Timer timer1;
     }
 }

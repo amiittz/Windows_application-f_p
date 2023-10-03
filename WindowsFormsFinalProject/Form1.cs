@@ -16,12 +16,11 @@ namespace WindowsFormsFinalProject
         bool go_r;
         bool go_u;//לתזוזה של הכדור
         bool go_d;
-        bool is_game_over;
 
-        int count;
+        int count = 12;
         int ballx;//בזה צריך לעשות תזוזה אמיתית
         int bally;
-        int speed;
+        int speed = 10;
 
         public Form1()
         {
@@ -31,14 +30,14 @@ namespace WindowsFormsFinalProject
 
         private void start_game()
         {
-            count = 12;
+            //count = 12;
             label1.Text = "count: " + count;
-            speed = 5;
             timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
             if (go_l)
             {
                 ball.Left -= speed;
@@ -56,21 +55,27 @@ namespace WindowsFormsFinalProject
                 ball.Top += speed;
             }
 
-            if(ball.Bounds.IntersectsWith(end.Bounds))//בדיקת נצחון
+            if (ball.Bounds.IntersectsWith(end.Bounds))//בדיקת נצחון
             {
                 timer1.Stop();
                 MessageBox.Show("win in: " + count + " moves!");
             }
 
-            foreach(Control x in this.Controls)
+            foreach (Control x in this.Controls)
             {
-                if((string)x.Tag=="wall")
+                if ((string)x.Tag == "wall_h")//horizontal
                 {
                     if (ball.Bounds.IntersectsWith(x.Bounds))
                     {
-                        MessageBox.Show("wall");
-                        ball.Left -= speed;
+                      
+                    }
+                }
 
+                if ((string)x.Tag == "wall_v")//vertical
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        MessageBox.Show("wall_v");
                     }
                 }
             }
@@ -78,7 +83,7 @@ namespace WindowsFormsFinalProject
         }
         private void key_is_done(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode==Keys.Left)
+            if (e.KeyCode == Keys.Left)
             {
                 go_l = true;
             }
@@ -117,7 +122,7 @@ namespace WindowsFormsFinalProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -148,6 +153,6 @@ namespace WindowsFormsFinalProject
 
         }
 
-        
+
     }
 }
